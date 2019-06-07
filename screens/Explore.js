@@ -1,10 +1,14 @@
 import React from 'react'
-import { StyleSheet, Text, View, SafeAreaView, TextInput } from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView, TextInput, Platform, StatusBars } from 'react-native'
 
 import Icon from 'react-native-vector-icons/Ionicons'
 
 
 class Explore extends React.Component {
+
+  componentDidMount() {
+    this.startHeaderHeight = 80
+  }
 
   render() {
     return (
